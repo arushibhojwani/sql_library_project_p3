@@ -36,7 +36,8 @@ FROM issued_status
 GROUP BY 1 
 HAVING COUNT(issued_id) > 1; 
 
---CTAS -- T6. Create Summary Tables: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt 
+--CTAS -- 
+-- T6. Create Summary Tables: Used CTAS to generate new tables based on query results - each book and total book_issued_cnt 
 CREATE TABLE book_cnt 
 AS 
 SELECT 
